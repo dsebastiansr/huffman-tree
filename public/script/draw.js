@@ -24,7 +24,7 @@ window.drawHuffmanTree = function (tree) {
         height = container.offsetHeight || Math.min(window.innerHeight * 0.7, 600);
     }
     
-    const margin = { top: 60, right: 1, bottom: 40, left: 1 };
+    const margin = { top: 60, right: 1, bottom: 60, left: 1 };
 
     const svg = d3.select(container)
         .append('svg')
