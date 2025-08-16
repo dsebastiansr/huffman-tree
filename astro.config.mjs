@@ -8,8 +8,8 @@ export default defineConfig({
     plugins: [tailwindcss(), react()],
   },
 
-  site: 'https://chinigumy.github.io/',
-  base: 'huffman-tree',
+  site: 'https://chinigumy.github.io',
+  base: '/huffman-tree/',
 
   integrations: [react()],
 });
