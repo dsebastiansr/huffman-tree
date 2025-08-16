@@ -6,6 +6,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss(), react()],
+    base: '/huffman-tree'
   },
 
   integrations: [react()],
