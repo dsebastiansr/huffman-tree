@@ -1,0 +1,20 @@
+---
+import '../global.css';
+import 'animate.css';
+import HuffmanApp from '../components/HuffmanApp.jsx';
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Codificación Huffman</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="/script/draw.js" is:inline></script>
+    </head>
+    <body class="text-white">
+        <HuffmanApp client:only="react" />
+    </body>
+</html>
