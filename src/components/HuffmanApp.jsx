@@ -72,7 +72,7 @@ export default function HuffmanApp() {
   return (
     <div className="w-full">
       <img
-        src="/huffman-tree/nordic.jpg"
+        src="https://chinigumy.github.io/huffman-tree/nordic.jpg"
         className="z-[-99] fixed brightness-50 w-full h-full object-cover"
         alt=""
       />
