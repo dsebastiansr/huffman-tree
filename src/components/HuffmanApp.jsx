@@ -30,9 +30,7 @@ function getHuffmanTable(text) {
 
   function assignCodes(node, prefix = '') {
     if (!node) return;
-    if (node.character) {
-      codes[node.character] = prefix;
-    }
+    if (node.character) codes[node.character] = prefix;
     if (node.right) assignCodes(node.right, prefix + '0');
     if (node.left) assignCodes(node.left, prefix + '1');
   }
@@ -72,7 +70,7 @@ export default function HuffmanApp() {
   return (
     <div className="w-full">
       <img
-        src="https://chinigumy.github.io/huffman-tree/nordic.jpg"
+        src="https://dsebastiansr.github.io/huffman-tree/nordic.jpg"
         className="z-[-99] fixed brightness-50 w-full h-full object-cover"
         alt=""
       />
@@ -94,6 +92,7 @@ export default function HuffmanApp() {
                 value={texto}
                 onChange={(e) => setTexto(e.target.value)}
               />
+              <input/>
             </div>
 
             <div className="flex flex-col shadow-lg rounded-xl px-6 py-6 bg-slate-500/5 bg-clip-padding backdrop-filter backdrop-blur backdrop-saturate-50 backdrop-contrast-100 field-sizing-content">

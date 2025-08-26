@@ -89,22 +89,20 @@ window.drawHuffmanTree = function (tree) {
         .attr('transform', d => `translate(${d.x},${d.y})`);
 
     node.append('circle')
-        .attr('r', 0) // Empiezan con radio 0
+        .attr('r', 0)
         .attr('opacity', 0)
         .attr('fill', d => d.children ? '#252525' : '#3b3c42')
         .attr('stroke', '#222')
         .attr('stroke-width', 3)
-
         .transition()
         .duration(350)
-        .delay((d, i) => i * 60) // Retraso escalonado
-        
-        .attr('r', nodeRadius) // Empiezan con radio 0
+        .delay((d, i) => i * 60)
+        .attr('r', nodeRadius)
         .attr('opacity', 1)
         
 
     node.append('text')
-        .attr('fill', 'transparent') // Inicia transparente
+        .attr('fill', 'transparent')
         .text(d => d.data.name)
         .attr('dy', '.35em')
         .attr('text-anchor', 'middle')
@@ -113,8 +111,6 @@ window.drawHuffmanTree = function (tree) {
 
         .transition()
         .duration(350)
-
-        .delay((d, i) => 400 + i * 60) // Espera que el círculo aparezca
+        .delay((d, i) => 400 + i * 60)
         .attr('fill', '#fff');
-
 };
